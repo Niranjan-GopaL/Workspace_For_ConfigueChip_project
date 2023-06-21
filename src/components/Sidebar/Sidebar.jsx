@@ -2,9 +2,9 @@ import React from 'react'
 
 function Sidebar() {
   return (
-    <div>
+    <h1 className="text-3xl font-bold underline"  >
       Sidebar!!!!
-    </div>
+    </h1>
   )
 }
 
