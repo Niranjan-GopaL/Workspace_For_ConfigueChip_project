@@ -1,6 +1,6 @@
 // import './App.css'
 import Sidebar from './components/Sidebar/Sidebar.jsx'
-
+import Tool from './components/Tool/Tool.jsx'
 const activeMenu = false
 
 
@@ -21,6 +21,7 @@ function App() {
             // The width is zero here
             <div w-0 dark:bg-secondary-dark-bg  >
               <Sidebar />
+              <Tool/>
             </div>
           )}
         
