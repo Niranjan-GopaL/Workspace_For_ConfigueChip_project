@@ -40,11 +40,16 @@ const tools = [
    
 */
 
-
+const SPACE = "  "
 
 const Side_bar_MockUp = ({ selectedTool, setSelectedTool }) => (
 
-    <Stack direction="row" sx={{overflowY: "auto",height: { sx: "auto", md: "95%" },flexDirection: { md: "column" },width: "200px"}}>
+        <Stack direction="row" sx={{
+            overflowY: "auto",
+            flexDirection: { md: "column" },
+            width: "200px", 
+            borderRadius: 3
+        }}>
 
 
         <Box sx= {{backgroundColor: '#4a3579'}}> 
@@ -55,14 +60,16 @@ const Side_bar_MockUp = ({ selectedTool, setSelectedTool }) => (
         <button
             className="tool-btn"
             onClick={() => setSelectedTool(tool.name)}  
-            style={{background: tool.name === selectedTool && "#242424",color: "green",}}
+            style={{background: tool.name === selectedTool && "purple",color: "green",}}
             key={tool.name}
         >
 
             {/* THIS IS THE TOOL NAME */}
-            <span style={{ color: tool.name === selectedTool ? "green" : "red", marginright: "15px" }}>
+            <span style={{ color: tool.name === selectedTool ? "yellow" : "red", marginright: "15px" }}>
             {tool.icon}
             </span>
+
+            <div style={{width:"9px"}} />
 
             {/* THIS IS THE TOOL ICON */}
             <span style={{ opacity: tool.name === selectedTool ? "1" : "0.8" }}>

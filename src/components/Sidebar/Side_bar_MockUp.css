@@ -1,10 +1,10 @@
 .tool-btn:hover {
   background-color: #4a3579 !important;
-  color: white !important;
+  color: rgb(185, 255, 8) !important;
 }
 
 .tool-btn:hover span{
-  color: rgb(0, 0, 0) !important;
+  color: rgb(55, 171, 133) !important;
 }
 
 .tool-btn{
