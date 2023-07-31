@@ -14,7 +14,6 @@ function Sidebar() {
         <li><span><i className="fa fa-bookmark"></i></span><span>Bookmarks</span></li>
         <li><span><i className="fa fa-gear"></i></span><span>Settings</span></li>
         
-        
         </ul>
         
         <div className="content">
