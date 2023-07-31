@@ -1,43 +1,18 @@
 // import './App.css'
 
-import {useState , useEffect} from 'react'
-
-
-
 import Sidebar from './components/Sidebar/Sidebar.jsx'
 import Tool from './components/Tool/Tool.jsx'
-const activeMenu = true
 
 
-function App() {
+export default App = () => {
 
+    const [SelectedCategory, setSelectedCategory ] = useState('New');
 
-
-  // MAKE A HOOK
-  // const {activeMenu} = useStateContext();
-  const [SelectedCategory, setSelectedCategory ] = useState('New');
-
-
-
-  return (
-    <>
-        
-        {/* Trying to make sidebar appear and disappear on CLick based on the STATE OF ACTIVEMENU*/}
-          {activeMenu ? (
-            <div   >
-              <Sidebar/>
-            </div>
-          ):(
-              <div>     
-              // The width is zero here
-              <Sidebar />
-              <Tool/>
-            </div>
-          )}
-        
-        
-    </>
-  )
+    return (
+        <>
+        <Box sx={{ height: { sx: "auto", md: "92vh" }, borderRight: "1px solid #3d3d3d", px: { sx: 0, md: 2 } }}>
+            <Sidebar selectedCategory={SelectedCategory} setSelectedCategory={setSelectedCategory} />
+            </Box>
+        </>
+    )
 }
-
-export default App
