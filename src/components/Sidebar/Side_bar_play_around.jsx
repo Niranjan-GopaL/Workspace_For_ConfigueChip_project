@@ -5,9 +5,15 @@ import { Stack } from "@mui/material";
 // This is that list we made in utils/constatnts.js
 // import { tools } from "../Tool/{import_an_array_of_Tools}";
 
+tools = [
+    {icon:"THIS IS THE ICON OF THE TOOL1", name: "THIS IS THE NAME OF THE TOOL1"},
+    {icon:"THIS IS THE ICON OF THE TOOL2", name: "THIS IS THE NAME OF THE TOOL2"},
+    {icon:"THIS IS THE ICON OF THE TOOL3", name: "THIS IS THE NAME OF THE TOOL3"},
+    {icon:"THIS IS THE ICON OF THE TOOL4", name: "THIS IS THE NAME OF THE TOOL4"},
+    {icon:"THIS IS THE ICON OF THE TOOL5", name: "THIS IS THE NAME OF THE TOOL5"},
+]
+
 /*
-
-
 <------------------------       basic structure      ------------------------>
 
 {category.map((category) => (
@@ -16,21 +22,12 @@ import { Stack } from "@mui/material";
         <span>{category.name}</span>
     </button>
 ))}
-
-
-
-
 */
 
 
 
-tools = [
-    {icon:"THIS IS THE ICON OF THE TOOL1", name: "THIS IS THE NAME OF THE TOOL1"},
-    {icon:"THIS IS THE ICON OF THE TOOL2", name: "THIS IS THE NAME OF THE TOOL2"},
-    {icon:"THIS IS THE ICON OF THE TOOL3", name: "THIS IS THE NAME OF THE TOOL3"},
-    {icon:"THIS IS THE ICON OF THE TOOL4", name: "THIS IS THE NAME OF THE TOOL4"},
-    {icon:"THIS IS THE ICON OF THE TOOL5", name: "THIS IS THE NAME OF THE TOOL5"},
-]
+
+
 
 
 export default Component = ({ selectedTool, setSelectedTool }) => (
@@ -45,7 +42,8 @@ export default Component = ({ selectedTool, setSelectedTool }) => (
             classname="tool-btn"
             onclick={() => setSelectedTool(tool.name)}  
             style={{background: tool.name === selectedTool && "#fc1503",color: "white",}}
-            key={tool.name}>
+            key={tool.name}
+        >
 
             {/* THIS IS THE TOOL NAME */}
             <span style={{ color: tool.name === selectedTool ? "white" : "red", marginright: "15px" }}>

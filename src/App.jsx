@@ -1,4 +1,9 @@
 // import './App.css'
+
+import {useState , useEffect} from 'react'
+
+
+
 import Sidebar from './components/Sidebar/Sidebar.jsx'
 import Tool from './components/Tool/Tool.jsx'
 const activeMenu = true
@@ -6,8 +11,13 @@ const activeMenu = true
 
 function App() {
 
+
+
   // MAKE A HOOK
   // const {activeMenu} = useStateContext();
+  const [SelectedCategory, setSelectedCategory ] = useState('New');
+
+
 
   return (
     <>
