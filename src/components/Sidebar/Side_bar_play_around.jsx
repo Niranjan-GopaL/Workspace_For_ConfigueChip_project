@@ -49,6 +49,11 @@ export default Component = ({ selectedTool, setSelectedTool }) => (
 
 
 
+            {/* THIS IS THE TOOL ICON */}
+            <span style={{ opacity: tool.name === selectedTool ? "1" : "0.8" }}>
+            {tool.name}
+            </span>
+
         </button>
 
         ))}  
