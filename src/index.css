@@ -1,11 +1,11 @@
-:root {
+body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #040a42;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -47,13 +47,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -67,6 +61,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+/* Hiding scroll bar */
 ::-webkit-scrollbar {
     width: 0px;
     height: 5px;

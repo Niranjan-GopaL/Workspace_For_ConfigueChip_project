@@ -1,13 +1,13 @@
-.category-btn:hover {
-  background-color: #FC1503 !important;
+.tool-btn:hover {
+  background-color: #4a3579 !important;
   color: white !important;
 }
 
-.category-btn:hover span{
-  color: white !important;
+.tool-btn:hover span{
+  color: rgb(0, 0, 0) !important;
 }
 
-.category-btn{
+.tool-btn{
     font-weight: bold !important;
     text-transform: capitalize;
     display: flex;

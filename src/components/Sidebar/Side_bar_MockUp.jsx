@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import { Stack } from "@mui/material";
-
+import './Side_bar_MockUp.css'
 
 // This is that list we made in utils/constatnts.js
 // import { tools } from "../Tool/{import_an_array_of_Tools}";
@@ -10,23 +10,15 @@ const tools = [
     {icon:"ICON2 ", name: "NAME2"},
     {icon:"ICON3 ", name: "NAME3"},
     {icon:"ICON4 ", name: "NAME4"},
-    {icon:"ICON4 ", name: "NAME4"},
-    {icon:"ICON4 ", name: "NAME4"},
-    {icon:"ICON4 ", name: "NAME4"},
-    {icon:"ICON4 ", name: "NAME4"},
-    {icon:"ICON4 ", name: "NAME4"},
-    {icon:"ICON4 ", name: "NAME4"},
-    {icon:"ICON4 ", name: "NAME4"},
-    {icon:"ICON4 ", name: "NAME4"},
-    {icon:"ICON4 ", name: "NAME4"},
-    {icon:"ICON4 ", name: "NAME4"},
     {icon:"ICON5 ", name: "NAME5"},
-    {icon:"ICON5 ", name: "NAME5"},
-    {icon:"ICON5 ", name: "NAME5"},
+    {icon:"ICON6 ", name: "NAME6"},
+    {icon:"ICON7 ", name: "NAME7"},
+    {icon:"ICON8 ", name: "NAME8"},
+    {icon:"ICON9 ", name: "NAME9"},
 ]
 
 /*
-<------------------------       basic structure      ------------------------>
+<------------------------   basic structure      ------------------------>
 
 {category.map((category) => (
     <button>
@@ -53,15 +45,17 @@ const tools = [
 const Side_bar_MockUp = ({ selectedTool, setSelectedTool }) => (
 
     <Stack direction="row" sx={{overflowY: "auto",height: { sx: "auto", md: "95%" },flexDirection: { md: "column" },width: "200px"}}>
-        <Box sx= {{backgroundColor: '#000'}}> 
+
+
+        <Box sx= {{backgroundColor: '#4a3579'}}> 
 
         {tools.map((tool) => (
 
         //the color of the button has to be dynamic
         <button
-            classname="tool-btn"
-            onclick={() => setSelectedTool(tool.name)}  
-            style={{background: tool.name === selectedTool && "#fc1503",color: "green",}}
+            className="tool-btn"
+            onClick={() => setSelectedTool(tool.name)}  
+            style={{background: tool.name === selectedTool && "#242424",color: "green",}}
             key={tool.name}
         >
 
@@ -78,8 +72,10 @@ const Side_bar_MockUp = ({ selectedTool, setSelectedTool }) => (
         </button>
 
         ))}  
-    
         </Box>
+
+
+
     </Stack>
 )
 
