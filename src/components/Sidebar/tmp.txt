@@ -1,0 +1,32 @@
+            {/* THIS IS THE TOOL NAME */}
+            <span style={{ color: tool.name === selectedTool ? "white" : "red", marginright: "15px" }}>
+            {tool.icon}
+            </span>
+
+
+
+
+
+
+
+
+            {/* THIS IS THE TOOL ICON */}
+            <span style={{ opacity: tool.name === selectedTool ? "1" : "0.8" }}>
+            {tool.name}
+            </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            

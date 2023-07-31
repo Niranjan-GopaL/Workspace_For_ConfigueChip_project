@@ -1,7 +1,7 @@
 // import './App.css'
 import Sidebar from './components/Sidebar/Sidebar.jsx'
 import Tool from './components/Tool/Tool.jsx'
-const activeMenu = false
+const activeMenu = true
 
 
 function App() {
@@ -14,12 +14,12 @@ function App() {
         
         {/* Trying to make sidebar appear and disappear on CLick based on the STATE OF ACTIVEMENU*/}
           {activeMenu ? (
-            <div>
+            <div   >
               <Sidebar/>
             </div>
           ):(
-            // The width is zero here
-            <div w-0 dark:bg-secondary-dark-bg  >
+              <div>     
+              // The width is zero here
               <Sidebar />
               <Tool/>
             </div>
