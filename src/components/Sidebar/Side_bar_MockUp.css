@@ -9,8 +9,7 @@
 
 .tool-btn{
     font-weight: bold !important;
-    text-transform: capitalize;
-    display: flex;
+    text-transform: capitalize; display: flex;
     align-items: center;
     justify-content: start;
     cursor:pointer;
