@@ -42,7 +42,12 @@ const tools = [
 
 const SPACE = "  "
 
-const Side_bar_MockUp = ({ selectedTool, setSelectedTool }) => (
+
+
+const Side_bar_MockUp = ({ selectedTool, setSelectedTool ,handle,setlastselectedtool}) => (
+   
+    
+  
 
         <Stack direction="row" sx={{
             overflowY: "auto",
@@ -50,6 +55,9 @@ const Side_bar_MockUp = ({ selectedTool, setSelectedTool }) => (
             width: "200px", 
             borderRadius: 3
         }}>
+  
+
+
 
 
         <Box sx= {{backgroundColor: '#4a3579'}}> 
@@ -59,10 +67,20 @@ const Side_bar_MockUp = ({ selectedTool, setSelectedTool }) => (
         //the color of the button has to be dynamic
         <button
             className="tool-btn"
-            onClick={() => setSelectedTool(tool.name)}  
+            onClick={() => {
+                setlastselectedtool(selectedTool);
+                setSelectedTool(tool.name);
+                
+                handle();
+                
+             
+              
+              }}
+              
             style={{background: tool.name === selectedTool && "purple",color: "green",}}
             key={tool.name}
         >
+      
 
             {/* THIS IS THE TOOL NAME */}
             <span style={{ color: tool.name === selectedTool ? "yellow" : "red", marginright: "15px" }}>
@@ -78,7 +96,7 @@ const Side_bar_MockUp = ({ selectedTool, setSelectedTool }) => (
 
         </button>
 
-        ))}  
+        ))}
         </Box>
 
 
